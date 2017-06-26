@@ -6,7 +6,7 @@ function SuperCoder(nombre, edad, ocupacion, genero) {
     this.ocupacion = ocupacion;
     this.genero = genero;
     this.mensaje = function() {
-        return (this.edad > 17 &&
+        return (this.edad > 17 && this.genero.toLowerCase() == "femenino" &&
             (this.ocupacion.toLowerCase() == "web developer" ||
                 this.ocupacion.toLowerCase() == "estudiante laboratoria")) ? "You're awesome" : "Upsiii";
     }
