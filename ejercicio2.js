@@ -21,4 +21,9 @@ describe("Ejercicio 2", function() {
         var coder = new SuperCoder("Ester", 22, "Enfermera", "Femenino");
         assert.equal("Upsiii", coder.mensaje());
     })
+
+    it("para Lucia deberia ser Upsiii por que su edad es menor de 17", function() {
+        var coder = new SuperCoder("Lucia", "5", "Enfermera", "Femenino");
+        assert.equal("Upsiii", coder.mensaje());
+    })
 })
